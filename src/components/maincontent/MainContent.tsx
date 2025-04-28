@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { DropdownProps } from "../../types/type";
 
-const Dropdown: React.FC<DropdownProps> = ({ index, buttonLabel }) => {
+const Dropdown: React.FC<DropdownProps> = ({ buttonLabel }) => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
